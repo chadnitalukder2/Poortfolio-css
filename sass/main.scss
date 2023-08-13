@@ -11,10 +11,7 @@
   --light-color: #fff5ef;
   --whitw-color:#fff;
 }
-.container {
-  background: rgb(185, 170, 170);
-  height: 100vh;
-  position: relative;
-}
+
 
 @import "./components/navbar";
+@import "./components/heading";

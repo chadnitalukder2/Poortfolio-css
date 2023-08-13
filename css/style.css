@@ -11,13 +11,7 @@
   --light-color: #fff5ef;
   --whitw-color:#fff; }
 
-.container {
-  background: #b9aaaa;
-  height: 100vh;
-  position: relative; }
-
 .navbar {
-  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,3 +56,61 @@
       transition: all .3s; }
       .navbar__contact-bold:hover {
         color: var(--orange-color); }
+
+.header {
+  width: 100%;
+  background: var(--light-color);
+  display: flex;
+  padding: 0 50px 0 140px; }
+  .header .header-left {
+    flex-basis: 60%;
+    padding: 100px 10px; }
+    .header .header-left .sub-heading {
+      display: flex;
+      margin-bottom: 10px; }
+      .header .header-left .sub-heading p {
+        font-size: 16px;
+        color: var(--black-color);
+        text-transform: uppercase;
+        padding-left: 10px; }
+    .header .header-left .animate-heading h1 {
+      font-size: 60px;
+      line-height: -10px;
+      padding-right: 18%;
+      font-weight: 700;
+      margin: 0; }
+      .header .header-left .animate-heading h1 .wrapper {
+        color: var(--orange-color); }
+    .header .header-left .info p {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0;
+      margin-top: 20px;
+      line-height: 1.7em; }
+    .header .header-left .btn {
+      margin-top: 50px; }
+      .header .header-left .btn a {
+        text-decoration: none;
+        color: #fff;
+        background-color: var(--orange-color);
+        border-radius: 6px;
+        padding: 10px 20px;
+        font-size: 21px;
+        font-weight: 500;
+        text-transform: capitalize;
+        transition: all .5s; }
+    .header .header-left .btn a:hover {
+      background: black;
+      color: var(--orange-color);
+      border: 1px solid var(--orange-color);
+      box-shadow: inset 5em 0 0 0 #000, inset -5em 0 0 0 #000; }
+  .header .header-right {
+    position: relative; }
+    .header .header-right .bg-img img {
+      margin: 40px 10px;
+      width: 350px; }
+    .header .header-right .image img {
+      position: absolute;
+      width: 400px;
+      margin-top: 30px;
+      top: 0; }

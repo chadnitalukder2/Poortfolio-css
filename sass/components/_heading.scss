@@ -1,0 +1,82 @@
+.header{
+    width: 100%;
+    background:var(--light-color);
+    display: flex;
+    padding: 0 50px 0 140px;
+    .header-left{
+        flex-basis: 60%;
+        padding: 100px 10px;
+        
+        .sub-heading{
+            display: flex;
+            margin-bottom: 10px;
+            p{
+                font-size: 16px;
+                color: var(--black-color);
+                text-transform: uppercase;
+                padding-left: 10px;
+            }
+        }
+            .animate-heading h1{
+                font-size: 60px;
+                line-height: -10px;
+                padding-right: 18%;
+                font-weight: 700;
+
+                margin: 0;
+                .wrapper{
+                    color: var(--orange-color);
+                }
+            }
+            .info p{
+                font-size: 18px;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 20px;
+                line-height: 1.7em;
+            }
+            .btn {
+                margin-top: 50px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: var(--orange-color);
+                    border-radius: 6px;
+                    padding: 10px 20px;
+                    font-size: 21px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    transition: all .5s;
+                }
+                
+            }
+            .btn a:hover{
+                background: black;
+              color: var(--orange-color);
+                border: 1px solid var(--orange-color);
+                box-shadow: inset 5em 0 0 0 #000,
+      inset -5em 0 0 0 #000;
+
+            }
+        
+        
+    }
+    .header-right{
+        position: relative;
+        .bg-img{ 
+           img{
+            margin: 40px 10px;
+            width: 350px;
+        
+        }
+    }
+        .image img{
+            position: absolute;
+            width: 400px;
+            margin-top: 30px;
+            top: 0;
+        }
+    }
+
+    }
+
