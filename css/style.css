@@ -1,6 +1,64 @@
-body {
-  height: 500px;
-  width: 500px;
-  background: palevioletred;
-  padding: 10px; 
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif; }
+
+:root {
+  --orange-color: #ff6b00;
+  --black-color: #101010;
+  --secondary-black-color: #606060;
+  --light-color: #fff5ef;
+  --whitw-color:#fff; }
+
+.container {
+  background: #b9aaaa;
+  height: 100vh;
+  position: relative; }
+
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--whitw-color);
+  width: 100%;
+  gap: 10px;
+  padding: 25px 60px; }
+  .navbar__logo {
+    flex-basis: 20%; }
+    .navbar__logo img {
+      width: 90px; }
+  .navbar__menu {
+    display: flex;
+    justify-content: center;
+    flex-basis: 60%;
+    font-size: 15px;
+    font-weight: 500;
+    gap: 20px; }
+    .navbar__menu ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none; }
+    .navbar__menu ul li {
+      padding: 30px 0; }
+    .navbar__menu li a {
+      text-decoration: none;
+      color: var(--black-color);
+      padding: 0 12px;
+      transition: all .3s; }
+    .navbar__menu li a:hover {
+      color: var(--orange-color); }
+  .navbar__contact {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: right; }
+    .navbar__contact a {
+      text-decoration: none; }
+    .navbar__contact-bold {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--black-color);
+      transition: all .3s; }
+      .navbar__contact-bold:hover {
+        color: var(--orange-color); }

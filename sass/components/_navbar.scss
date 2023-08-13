@@ -1,0 +1,60 @@
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--whitw-color);
+  width: 100%;
+  gap: 10px;
+  padding: 25px 60px;
+
+  &__logo {
+    flex-basis: 20%;
+    img {
+      width: 90px;
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    flex-basis: 60%;
+    font-size: 15px;
+    font-weight: 500;
+    gap: 20px;
+    ul{
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+    }
+    ul li{
+      padding: 30px 0;
+    }
+    li a{
+      text-decoration: none;
+      color:var( --black-color);
+      padding: 0 12px;
+      transition: all .3s;
+    }
+    li a:hover{
+      color: var(--orange-color);
+    }
+  }
+  &__contact {
+    display:flex;
+    flex-basis: 20%;
+    justify-content: right;
+    a{
+      text-decoration: none;
+    }
+    &-bold {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--black-color);
+      transition: all .3s;
+      &:hover{
+        color: var(--orange-color);
+      }
+    }
+  
+  }
+}
