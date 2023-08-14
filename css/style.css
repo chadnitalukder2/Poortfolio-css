@@ -11,10 +11,6 @@
   --light-color: #fff5ef;
   --whitw-color:#fff; }
 
-.img img {
-  width: 300px;
-  border-top: 3rem; }
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -72,7 +68,8 @@
     .header .header-left .up-banner {
       margin-left: -110px; }
       .header .header-left .up-banner img {
-        width: 70px; }
+        width: 70px;
+        margin-top: 20px; }
     .header .header-left .sub-heading {
       display: flex;
       margin-bottom: 10px; }
@@ -94,7 +91,8 @@
       font-weight: 400;
       margin: 0;
       margin-top: 20px;
-      line-height: 1.7em; }
+      line-height: 1.7em;
+      color: var(--secondary-black-color); }
     .header .header-left .btn {
       margin-top: 50px; }
       .header .header-left .btn a {
@@ -106,14 +104,14 @@
         font-size: 21px;
         font-weight: 500;
         text-transform: capitalize;
+        border: 1px solid var(--orange-color);
         transition: all 0.5s; }
     .header .header-left .btn a:hover {
       background: black;
       color: var(--orange-color);
-      border: 1px solid var(--orange-color);
       box-shadow: inset 5em 0 0 0 #000, inset -5em 0 0 0 #000; }
     .header .header-left .down-banner {
-      margin-bottom: 50px;
+      margin-bottom: 23px;
       text-align: center;
       animation: floatUpDown 3s infinite ease-in-out; }
       .header .header-left .down-banner img {
@@ -143,3 +141,139 @@
   100% {
     top: 0;
     left: 0; } }
+
+.about {
+  padding: 130px 95px 50px 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  .about .about-left {
+    flex-basis: 45%;
+    border-radius: 6px;
+    opacity: 1; }
+    .about .about-left img {
+      background: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+      border-radius: 6px; }
+  .about .about-left img:hover {
+    opacity: 1; }
+  .about .about-right {
+    flex-basis: 55%;
+    padding: 45px 50px 0px 30px; }
+    .about .about-right .sub-heading {
+      display: flex;
+      margin-bottom: 10px; }
+      .about .about-right .sub-heading p {
+        font-size: 16px;
+        color: var(--black-color);
+        text-transform: uppercase;
+        padding-left: 10px; }
+    .about .about-right h2 {
+      font-size: 44px;
+      font-weight: 700;
+      color: var(--black-color);
+      line-height: 1.3em; }
+    .about .about-right .info {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.7em;
+      color: var(--secondary-black-color); }
+    .about .about-right .description {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px; }
+      .about .about-right .description .complete {
+        display: flex;
+        flex-basis: 50%;
+        padding: 0 10px; }
+        .about .about-right .description .complete .one {
+          margin-right: 10px; }
+        .about .about-right .description .complete .one-info {
+          font-size: 21px;
+          font-size: 700;
+          color: var(--orange-color); }
+        .about .about-right .description .complete span h4 {
+          color: var(--black-color);
+          font-size: 21px;
+          font-weight: 500px; }
+      .about .about-right .description .experience {
+        display: flex;
+        padding: 0 10px; }
+        .about .about-right .description .experience .tow {
+          margin-right: 10px; }
+        .about .about-right .description .experience .tow-info {
+          font-size: 21px;
+          font-size: 700;
+          color: var(--orange-color); }
+        .about .about-right .description .experience span h4 {
+          color: var(--black-color);
+          font-size: 21px;
+          font-weight: 500px; }
+    .about .about-right .fead-up {
+      margin-top: 50px; }
+      .about .about-right .fead-up .row-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: start; }
+        .about .about-right .fead-up .row-1 .work {
+          display: flex;
+          padding: 15px 12px; }
+          .about .about-right .fead-up .row-1 .work i {
+            font-size: 16;
+            color: var(--orange-color);
+            margin-right: 10px; }
+          .about .about-right .fead-up .row-1 .work p {
+            font-size: 16px;
+            color: var(--secondary-black-color); }
+        .about .about-right .fead-up .row-1 .web {
+          display: flex;
+          padding: 15px 12px; }
+          .about .about-right .fead-up .row-1 .web i {
+            font-size: 16;
+            color: var(--orange-color);
+            margin-right: 10px; }
+          .about .about-right .fead-up .row-1 .web p {
+            font-size: 16px;
+            color: var(--secondary-black-color); }
+      .about .about-right .fead-up .row-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: start; }
+        .about .about-right .fead-up .row-2 .new {
+          display: flex;
+          padding: 15px 12px; }
+          .about .about-right .fead-up .row-2 .new i {
+            font-size: 16;
+            color: var(--orange-color);
+            margin-right: 10px; }
+          .about .about-right .fead-up .row-2 .new p {
+            font-size: 16px;
+            color: var(--secondary-black-color); }
+        .about .about-right .fead-up .row-2 .revision {
+          display: flex;
+          padding: 15px 30px 0  15px; }
+          .about .about-right .fead-up .row-2 .revision i {
+            font-size: 16;
+            color: var(--orange-color);
+            margin-right: 10px; }
+          .about .about-right .fead-up .row-2 .revision p {
+            font-size: 16px;
+            color: var(--secondary-black-color); }
+    .about .about-right .btn {
+      margin-top: 50px; }
+      .about .about-right .btn a {
+        text-decoration: none;
+        color: #fff;
+        background-color: var(--orange-color);
+        border-radius: 6px;
+        padding: 10px 20px;
+        font-size: 21px;
+        font-weight: 500;
+        text-transform: capitalize;
+        transition: all 0.5s;
+        border: 1px solid var(--orange-color); }
+    .about .about-right .btn a:hover {
+      background: black;
+      color: var(--orange-color);
+      box-shadow: inset 5em 0 0 0 #000, inset -5em 0 0 0 #000; }
