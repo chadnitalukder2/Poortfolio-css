@@ -11,6 +11,10 @@
   --light-color: #fff5ef;
   --whitw-color:#fff; }
 
+.img img {
+  width: 300px;
+  border-top: 3rem; }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -58,13 +62,17 @@
         color: var(--orange-color); }
 
 .header {
+  position: relative;
   width: 100%;
   background: var(--light-color);
   display: flex;
   padding: 0 50px 0 140px; }
   .header .header-left {
-    flex-basis: 60%;
-    padding: 100px 10px; }
+    flex-basis: 60%; }
+    .header .header-left .up-banner {
+      margin-left: -110px; }
+      .header .header-left .up-banner img {
+        width: 70px; }
     .header .header-left .sub-heading {
       display: flex;
       margin-bottom: 10px; }
@@ -98,19 +106,40 @@
         font-size: 21px;
         font-weight: 500;
         text-transform: capitalize;
-        transition: all .5s; }
+        transition: all 0.5s; }
     .header .header-left .btn a:hover {
       background: black;
       color: var(--orange-color);
       border: 1px solid var(--orange-color);
-      box-shadow: inset 5em 0 0 0 #000, inset -5em 0 0 0 #000; }
+      box-shadow: inset 5em 0 0 0 #000, inset -5em 0 0 0 #000; }
+    .header .header-left .down-banner {
+      margin-bottom: 50px;
+      text-align: center;
+      animation: floatUpDown 3s infinite ease-in-out; }
+      .header .header-left .down-banner img {
+        width: 70px; }
   .header .header-right {
     position: relative; }
-    .header .header-right .bg-img img {
-      margin: 40px 10px;
-      width: 350px; }
     .header .header-right .image img {
       position: absolute;
       width: 400px;
       margin-top: 30px;
       top: 0; }
+    .header .header-right .bg-img img {
+      margin: 40px 10px;
+      width: 350px;
+      animation-name: image-anim;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+
+@keyframes image-anim {
+  0% {
+    top: 0;
+    left: 0; }
+  50% {
+    top: 100%;
+    left: 0; }
+  100% {
+    top: 0;
+    left: 0; } }
