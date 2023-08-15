@@ -1,0 +1,28 @@
+.resume {
+  background: var(--light-color);
+  padding: 130px 0;
+  height: 100vh;
+  width: 100%;
+  .container {
+    padding: 0 100px;
+    .heading{
+      text-align: center;
+      .sub-heading {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        p {
+          font-size: 16px;
+          color: var(--black-color);
+          text-transform: uppercase;
+          padding-left: 10px;
+        }
+      }
+      h2 {
+        font-size: 44px;
+        font-weight: 700;
+        color: var(--black-color);
+      }
+    }
+  }
+}
