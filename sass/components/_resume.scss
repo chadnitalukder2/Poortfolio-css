@@ -1,7 +1,6 @@
 .resume {
   background: var(--light-color);
   padding: 130px 0;
-  height: 100vh;
   width: 100%;
   .container {
     padding: 0 100px;
@@ -23,6 +22,93 @@
         font-weight: 700;
         color: var(--black-color);
       }
+    }
+
+    .row{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        .row-left{
+            flex-basis: 20%;
+            background: palegreen;
+            .topics{
+                content: '';
+                width: 2px;
+                background:#929292;
+                height: 100%;
+            
+                .topics-1{
+                    padding: 110px 0;
+                    margin-left: 23px;
+                    line-height: 1.3em;
+                    font-size: 24px;
+                    font-weight: 500;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        background:var(--orange-color);
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: -31px;
+                    }
+                }
+                
+                .topics-2{
+                padding-bottom: 110px;
+                margin-left: 23px;
+                line-height: 1.3em;
+                font-size: 24px;
+                font-weight: 500;
+                position: relative;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    background:var(--orange-color);
+                    top: 10%;
+                    transform: translateY(-50%);
+                    left: -31px;
+                }
+
+                }
+                .topics-3{
+                    padding-bottom: 110px;
+                    margin-left: 23px;
+                    line-height: 1.3em;
+                    font-size: 24px;
+                    font-weight: 500;
+                    position: relative;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        background:var(--orange-color);
+                        top: 12%;
+                        transform: translateY(-50%);
+                        left: -31px;
+                    }
+
+                }
+
+
+            
+        }
+            
+        }
+        .row-right{
+            flex-basis: 80%;
+            background: palevioletred;
+        }
     }
   }
 }
