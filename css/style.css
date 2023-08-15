@@ -277,3 +277,53 @@
       background: black;
       color: var(--orange-color);
       box-shadow: inset 5em 0 0 0 #000, inset -5em 0 0 0 #000; }
+
+.service {
+  padding: 65px 0px 130px 0px; }
+  .service .container {
+    padding: 0 100px; }
+    .service .container .row {
+      padding: 0 12px; }
+      .service .container .row .heading {
+        text-align: center; }
+        .service .container .row .heading .sub-heading {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 10px; }
+          .service .container .row .heading .sub-heading p {
+            font-size: 16px;
+            color: var(--black-color);
+            text-transform: uppercase;
+            padding-left: 10px; }
+        .service .container .row .heading h2 {
+          font-size: 44px;
+          font-weight: 700;
+          color: var(--black-color);
+          text-transform: uppercase;
+          line-height: 1.3em; }
+      .service .container .row .service-grid {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 24px;
+        box-sizing: border-box; }
+        .service .container .row .service-grid .grid-1 {
+          padding: 50px 30px;
+          border: 1px solid var(--light-color);
+          border-radius: 6px;
+          transition: all .3s;
+          text-align: center; }
+          .service .container .row .service-grid .grid-1 img {
+            margin-bottom: 25px; }
+          .service .container .row .service-grid .grid-1 h3 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 13px;
+            color: var(--black-color); }
+          .service .container .row .service-grid .grid-1 p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.7em;
+            color: var(--secondary-black-color); }
+        .service .container .row .service-grid .grid-1:hover {
+          background: var(--light-color); }
