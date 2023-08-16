@@ -69,7 +69,11 @@
       margin-left: -110px; }
       .header .header-left .up-banner img {
         width: 70px;
-        margin-top: 20px; }
+        margin-top: 20px;
+        animation-name: image-anim;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; }
     .header .header-left .sub-heading {
       display: flex;
       margin-bottom: 10px; }
@@ -133,14 +137,13 @@
 
 @keyframes image-anim {
   0% {
-    top: 0;
-    left: 0; }
+    margin-left: 10px; }
+  25% {
+    margin-left: -10px; }
   50% {
-    top: 100%;
-    left: 0; }
+    margin-right: 10px; }
   100% {
-    top: 0;
-    left: 0; } }
+    margin-right: -10px; } }
 
 .about {
   padding: 130px 95px 50px 100px;
@@ -841,3 +844,47 @@
               font-weight: 400;
               font-size: 16px;
               color: var(--secondary-black-color); }
+
+.portfolio {
+  padding: 65px 0; }
+  .portfolio .container {
+    padding: 0 100px; }
+    .portfolio .container .heading {
+      text-align: center; }
+      .portfolio .container .heading .sub-heading {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; }
+        .portfolio .container .heading .sub-heading p {
+          font-size: 16px;
+          color: var(--black-color);
+          text-transform: uppercase;
+          padding-left: 10px; }
+      .portfolio .container .heading h2 {
+        font-size: 44px;
+        font-weight: 700;
+        color: var(--black-color); }
+    .portfolio .container .mobile-row {
+      margin-top: 50px; }
+      .portfolio .container .mobile-row .controls {
+        margin-bottom: 45px;
+        display: flex;
+        justify-content: center;
+        gap: 20px; }
+        .portfolio .container .mobile-row .controls button {
+          font-weight: 500;
+          font-size: 15px;
+          padding: 15px;
+          border: none;
+          background: transparent;
+          position: relative;
+          color: var(--secondary-black-color); }
+          .portfolio .container .mobile-row .controls button:hover::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 30%;
+            bottom: 0;
+            left: 50%;
+            transform: translatex(-50%);
+            background-color: var(--orange-color); }
