@@ -29,8 +29,7 @@
         display: flex;
         justify-content: space-between;
         .row-left{
-            flex-basis: 20%;
-            background: palegreen;
+            flex-basis: 15%;
             .topics{
                 content: '';
                 width: 2px;
@@ -38,7 +37,7 @@
                 height: 100%;
             
                 .topics-1{
-                    padding: 110px 0;
+                    padding: 130px 0;
                     margin-left: 23px;
                     line-height: 1.3em;
                     font-size: 24px;
@@ -106,8 +105,108 @@
             
         }
         .row-right{
-            flex-basis: 80%;
-            background: palevioletred;
+            flex-basis: 87%;
+            .education{
+                display: flex;
+                padding: 33px;
+                border-radius: 6px;
+                background: var( --whitw-color);
+                .first{
+                    padding-right: 78PX;
+                    h4{
+                        font-size: 21px;
+                        margin: 0;
+                        font-weight: 600;
+                        line-height: 1.2em;
+                    }
+                    p{
+                        margin-top: 10px;
+                        line-height: 1.7em;
+                        font-weight: 400;
+                        color: var(--secondary-black-color);
+                    }
+                    .ulav{
+                        margin-top: 20px;
+                        line-height: 1.7em;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: var(--secondary-black-color);
+                    }
+                    
+                }
+                .second{
+                    padding-right: 39px;
+                    padding-left: 50px;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: -20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        display: inline-block;
+                        width: 1px;
+                        height: 90%;
+                        background-color: #D1D1D1;
+                    
+                    }
+                    h4{
+                        font-size: 21px;
+                        margin: 0;
+                        font-weight: 600;
+                        line-height: 1.2em;
+                    }
+                    p{
+                        margin-top: 10px;
+                        line-height: 1.7em;
+                        font-weight: 400;
+                        color: var(--secondary-black-color);
+                    }
+                    .ulav{
+                        margin-top: 20px;
+                        line-height: 1.7em;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: var(--secondary-black-color);
+                    }
+                
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        right: -20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        display: inline-block;
+                        width: 1px;
+                        height: 90%;
+                        background-color: #D1D1D1;
+                    }
+                    
+                    
+                }
+                .third{
+                    padding-left: 78px;
+                    h4{
+                        font-size: 21px;
+                        margin: 0;
+                        font-weight: 600;
+                        line-height: 1.2em;
+                    }
+                    p{
+                        margin-top: 10px;
+                        line-height: 1.7em;
+                        font-weight: 400;
+                        color: var(--secondary-black-color);
+                    }
+                    .ulav{
+                        margin-top: 20px;
+                        line-height: 1.7em;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: var(--secondary-black-color);
+                    }
+                }
+            }
         }
     }
   }
