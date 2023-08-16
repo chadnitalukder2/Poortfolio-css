@@ -301,13 +301,13 @@
             }
           }
           .second {
-            padding-right: 39px;
-            padding-left: 50px;
+            padding-right: 70px;
+            padding-left: 90px;
             position: relative;
             &::before {
               content: "";
               position: absolute;
-              left: -20px;
+              left: 23px;
               top: 50%;
               transform: translateY(-50%);
               display: inline-block;
