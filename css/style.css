@@ -879,12 +879,62 @@
           background: transparent;
           position: relative;
           color: var(--secondary-black-color); }
-          .portfolio .container .mobile-row .controls button:hover::after {
-            content: "";
+          .portfolio .container .mobile-row .controls button:hover {
+            color: var(--black-color);
+            position: relative; }
+            .portfolio .container .mobile-row .controls button:hover::after {
+              content: "";
+              position: absolute;
+              height: 2px;
+              width: 30%;
+              bottom: 0;
+              left: 50%;
+              transform: translatex(-50%);
+              background-color: var(--orange-color); }
+      .portfolio .container .mobile-row .portpoli-massonary {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 24px;
+        text-align: center; }
+        .portfolio .container .mobile-row .portpoli-massonary .items {
+          position: relative;
+          overflow: hidden;
+          border-radius: 6px; }
+          .portfolio .container .mobile-row .portpoli-massonary .items img {
+            width: 100%;
+            height: 340px; }
+          .portfolio .container .mobile-row .portpoli-massonary .items p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.7em;
+            color: var(--whitw-color);
+            text-align: start; }
+          .portfolio .container .mobile-row .portpoli-massonary .items h3 {
+            font-size: 21px;
+            font-weight: 600px;
+            line-height: 1.3em;
+            color: var(--whitw-color);
+            text-align: start; }
+          .portfolio .container .mobile-row .portpoli-massonary .items .info {
+            background: var(--orange-color);
+            width: 70%;
+            margin: 0 auto;
+            border-radius: 10px;
+            padding: 20px;
             position: absolute;
-            height: 2px;
-            width: 30%;
-            bottom: 0;
-            left: 50%;
-            transform: translatex(-50%);
-            background-color: var(--orange-color); }
+            transform: translate(22%, 10%);
+            visibility: hidden;
+            transition: all 0.5s; }
+          .portfolio .container .mobile-row .portpoli-massonary .items .hidden {
+            height: 0;
+            transition: all 0.5s;
+            background: #070b1093;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            top: -350px; }
+          .portfolio .container .mobile-row .portpoli-massonary .items:hover .info {
+            visibility: visible;
+            transform: translate(22%, -150%); }
+          .portfolio .container .mobile-row .portpoli-massonary .items:hover .hidden {
+            top: 0; }
