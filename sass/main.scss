@@ -9,7 +9,7 @@
   --black-color: #101010;
   --secondary-black-color: #606060;
   --light-color: #fff5ef;
-  --whitw-color:#fff;
+  --whitw-color: #fff;
 }
 @import "./components/navbar";
 @import "./components/heading";
@@ -17,3 +17,4 @@
 @import "./components/service";
 @import "./components/resume";
 @import "./components/portfolio";
+@import "./components/blog";

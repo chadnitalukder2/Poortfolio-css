@@ -9,7 +9,7 @@
   --black-color: #101010;
   --secondary-black-color: #606060;
   --light-color: #fff5ef;
-  --whitw-color:#fff; }
+  --whitw-color: #fff; }
 
 .navbar {
   display: flex;
@@ -70,7 +70,6 @@
       .header .header-left .up-banner img {
         width: 70px;
         margin-top: 20px;
-        animation-name: image-anim;
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-timing-function: linear; }
@@ -136,14 +135,12 @@
       animation-timing-function: linear; }
 
 @keyframes image-anim {
-  0% {
-    margin-left: 10px; }
-  25% {
-    margin-left: -10px; }
-  50% {
-    margin-right: 10px; }
+  33% {
+    margin-top: 10px; }
+  66% {
+    margin-bottom: 10px; }
   100% {
-    margin-right: -10px; } }
+    margin-bottom: -10px; } }
 
 .about {
   padding: 130px 95px 50px 100px;
@@ -153,14 +150,24 @@
   .about .about-left {
     flex-basis: 45%;
     border-radius: 6px;
-    opacity: 1; }
+    position: relative; }
     .about .about-left img {
       background: rgba(0, 0, 0, 0.4);
       width: 100%;
       height: 100%;
       border-radius: 6px; }
-  .about .about-left img:hover {
-    opacity: 1; }
+    .about .about-left .hidden {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+      background: #070b1093;
+      margin: 0 auto;
+      top: 0;
+      transition: all .5s;
+      opacity: 0; }
+    .about .about-left:hover .hidden {
+      opacity: 1; }
   .about .about-right {
     flex-basis: 55%;
     padding: 45px 50px 0px 30px; }
@@ -938,3 +945,91 @@
             transform: translate(22%, -150%); }
           .portfolio .container .mobile-row .portpoli-massonary .items:hover .hidden {
             top: 0; }
+
+.blog {
+  padding: 65px 0; }
+  .blog .container {
+    padding: 0 100px; }
+    .blog .container .heading {
+      text-align: center; }
+      .blog .container .heading .sub-heading {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; }
+        .blog .container .heading .sub-heading p {
+          font-size: 16px;
+          color: var(--black-color);
+          text-transform: uppercase;
+          padding-left: 10px; }
+      .blog .container .heading h2 {
+        font-size: 44px;
+        font-weight: 700;
+        color: var(--black-color); }
+    .blog .container .blogs-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 24px;
+      margin-top: 50px; }
+      .blog .container .blogs-container .card {
+        border: 1px solid #ffe2d1;
+        border-radius: 6px; }
+        .blog .container .blogs-container .card .image {
+          width: fit-content;
+          position: relative; }
+          .blog .container .blogs-container .card .image img {
+            max-height: 300px;
+            width: 424px;
+            max-width: 100%;
+            border-radius: 6px 6px 0 0;
+            position: relative; }
+          .blog .container .blogs-container .card .image .hidden {
+            position: absolute;
+            width: 100%;
+            height: 98%;
+            border-radius: 6px 6px 0 0;
+            background: #070b1093;
+            margin: 0 auto;
+            top: 0;
+            opacity: 0;
+            transition: all .5s; }
+          .blog .container .blogs-container .card .image:hover .hidden {
+            opacity: 1; }
+        .blog .container .blogs-container .card .card-body {
+          padding: 30px;
+          flex: 1 1 auto; }
+          .blog .container .blogs-container .card .card-body p {
+            margin-bottom: 20px;
+            line-height: 1.7em;
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--secondary-black-color); }
+          .blog .container .blogs-container .card .card-body a {
+            text-decoration: none;
+            color: var(--black-color);
+            margin: 0;
+            background: transparent;
+            transition: all .3s; }
+            .blog .container .blogs-container .card .card-body a span {
+              font-size: 24px;
+              line-height: 1.3em;
+              font-weight: 600; }
+            .blog .container .blogs-container .card .card-body a:hover {
+              color: var(--orange-color); }
+          .blog .container .blogs-container .card .card-body .btn {
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center; }
+            .blog .container .blogs-container .card .card-body .btn span {
+              margin-right: 10px;
+              line-height: 1.7rem;
+              font-weight: 600;
+              font-size: 15px;
+              color: var(--orange-color); }
+            .blog .container .blogs-container .card .card-body .btn i {
+              font-size: 16px;
+              font-weight: 700;
+              color: var(--orange-color);
+              margin: 0;
+              transition: all .3s; }
+            .blog .container .blogs-container .card .card-body .btn:hover i {
+              margin-left: 10px; }
