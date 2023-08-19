@@ -1090,6 +1090,7 @@
             position: relative;
             overflow: hidden;
             color: #fff;
+            margin-top: 40px;
             padding: 10px 32px;
             background-color: var(--orange-color);
             border-radius: 6px;
@@ -1132,5 +1133,37 @@
                 transform: rotate(0deg);
                 left: 0; }
       .contact .container .home .home-right {
-        flex-basis: 40%;
-        background-color: navy; }
+        flex-basis: 40%; }
+        .contact .container .home .home-right .margin {
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 78px; }
+          .contact .container .home .home-right .margin .items-1 {
+            display: flex;
+            margin-bottom: 30px; }
+            .contact .container .home .home-right .margin .items-1 .icon {
+              margin-right: 10px;
+              width: 60px;
+              height: 60px;
+              background: var(--light-color);
+              border-radius: 8px;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              .contact .container .home .home-right .margin .items-1 .icon i {
+                color: var(--orange-color);
+                font-size: 30px; }
+            .contact .container .home .home-right .margin .items-1 .project h4 {
+              font-size: 21px;
+              font-weight: 500;
+              color: var(--black-color); }
+            .contact .container .home .home-right .margin .items-1 .project p {
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 1.7em;
+              color: var(--secondary-black-color);
+              transition: all .4s; }
+            .contact .container .home .home-right .margin .items-1 .project a {
+              text-decoration: none; }
+            .contact .container .home .home-right .margin .items-1 .project p:hover {
+              color: var(--orange-color); }

@@ -64,6 +64,7 @@
             position: relative;
             overflow: hidden;
             color: #fff;
+            margin-top: 40px;
             padding: 10px 32px;
             background-color: var(--orange-color);
             border-radius: 6px;
@@ -118,7 +119,53 @@
       }
       .home-right {
         flex-basis: 40%;
-        background-color: navy;
+        .margin{
+          display: flex;
+          flex-wrap: wrap;
+          padding-left: 78px;
+          .items-1{
+            display: flex;
+            margin-bottom: 30px;
+            .icon{
+              margin-right: 10px;
+              width: 60px;
+              height: 60px;
+              background: var(--light-color);
+              border-radius: 8px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              i{
+                color: var(--orange-color);
+                font-size: 30px;
+              }
+            }
+            .project{
+              h4{
+                font-size: 21px;
+                font-weight: 500;
+                color: var(--black-color);
+              }
+              p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.7em;
+                color: var(--secondary-black-color);
+                transition: all .4s;
+              }
+              a{
+                text-decoration: none;
+                
+              }
+              p:hover{
+                  color: var(--orange-color);
+                
+              }
+            }
+            
+          }
+
+        }
       }
     }
   }
