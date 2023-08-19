@@ -1167,3 +1167,82 @@
               text-decoration: none; }
             .contact .container .home .home-right .margin .items-1 .project p:hover {
               color: var(--orange-color); }
+
+.footer {
+  background-color: var(--black-color); }
+  .footer .container {
+    padding: 0 100px; }
+    .footer .container .footer-top {
+      padding: 130px 0px;
+      border-bottom: 1px solid #515151;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      color: white;
+      gap: 24px; }
+      .footer .container .footer-top .first {
+        flex-basis: 20%; }
+        .footer .container .footer-top .first img {
+          margin-bottom: 36px;
+          vertical-align: middle; }
+        .footer .container .footer-top .first p {
+          margin-bottom: 30px;
+          line-height: 1.7em;
+          font-size: 16px; }
+        .footer .container .footer-top .first h3 {
+          font-size: 20px; }
+      .footer .container .footer-top .second {
+        flex-basis: 20%; }
+        .footer .container .footer-top .second h4 {
+          font-size: 21px;
+          font-weight: 500;
+          color: var(--white-color); }
+        .footer .container .footer-top .second .link {
+          margin-top: 57px; }
+          .footer .container .footer-top .second .link ul {
+            list-style: none; }
+            .footer .container .footer-top .second .link ul li {
+              margin-bottom: 20px; }
+            .footer .container .footer-top .second .link ul a {
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 1.7em;
+              color: var(--white-color);
+              transition: all .3s; }
+            .footer .container .footer-top .second .link ul a:hover {
+              color: var(--orange-color); }
+      .footer .container .footer-top .third {
+        flex-basis: 20%; }
+      .footer .container .footer-top .four {
+        flex-basis: 20%; }
+        .footer .container .footer-top .four h4 {
+          font-size: 21px;
+          font-weight: 500;
+          color: var(--white-color); }
+        .footer .container .footer-top .four .media {
+          margin-top: 63px;
+          margin-bottom: 35px; }
+          .footer .container .footer-top .four .media ul {
+            list-style: none;
+            display: flex;
+            align-items: center; }
+            .footer .container .footer-top .four .media ul li {
+              margin-right: 20px; }
+              .footer .container .footer-top .four .media ul li a {
+                text-decoration: none;
+                color: var(--white-color);
+                font-size: 21px;
+                width: 42px;
+                height: 42px;
+                background-color: var(--orange-color);
+                border-radius: 6px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .4s;
+                border-top: 3px solid transparent;
+                border-right: 3px solid transparent; }
+              .footer .container .footer-top .four .media ul li a:hover {
+                background: var(--orange-color);
+                color: var(--white-color); }
