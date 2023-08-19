@@ -1,22 +1,30 @@
 .header {
-    position: relative;
+  position: relative;
   width: 100%;
   background: var(--light-color);
   display: flex;
   padding: 0 50px 0 140px;
   .header-left {
     flex-basis: 60%;
+    margin-top: 52px;
 
-    .up-banner{
-        margin-left: -110px;
-        img{
-            width: 70px;
-            margin-top: 20px;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
+    .up-banner {
+      margin-left: -110px;
+      img {
+        width: 70px;
+        position: absolute;
+        margin-top: -17px;
+        animation-name: cercal;
+        animation-duration: .3s;
+        animation-iteration-count: infinite;
+     
+        @keyframes cercal {
+          0% {
+            transform: scale(1.1);
         }
       }
+    }
+  }
 
     .sub-heading {
       display: flex;
@@ -47,42 +55,95 @@
       line-height: 1.7em;
       color: var(--secondary-black-color);
     }
-    .btn {
-      margin-top: 50px;
-      a {
+  
+    .submit-btn {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      margin-top: 40px;
+      padding: 12px 45px;
+      background-color: var(--orange-color);
+      border-radius: 6px;
+      font-size: 21px;
+      font-weight: 500;
+      text-transform: capitalize;
+      border: 1px solid transparent;
+      transition: all 0.3s;
+      a{
         text-decoration: none;
+        color: var(--whitw-color);
+      }
+
+      span {
+        position: relative !important;
+        z-index: 1 !important;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--black-color);
+        visibility: hidden;
+        transition: all 1s ease;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--black-color);
+        visibility: hidden;
+        transition: all 1s ease;
+      }
+      &:hover {
         color: #fff;
-        background-color: var(--orange-color);
-        border-radius: 6px;
-        padding: 10px 20px;
-        font-size: 21px;
-        font-weight: 500;
-        text-transform: capitalize;
-        border: 1px solid var(--orange-color);
-        transition: all 0.5s;
+        &::before {
+          visibility: visible;
+          transform: rotate(0deg);
+          right: 0;
+        }
+        &::after {
+          visibility: visible;
+          transform: rotate(0deg);
+          left: 0;
+        }
       }
     }
-    .btn a:hover {
-      background: black;
-      color: var(--orange-color);
-      box-shadow: inset 5em 0 0 0 #000, inset -5em 0 0 0 #000;
-    }
     .down-banner {
-        margin-bottom: 23px;
+      margin-bottom: 23px;
       text-align: center;
       animation: floatUpDown 3s infinite ease-in-out;
       img {
         width: 70px;
+        @keyframes  floatUpDown  {
+          0%{
+            margin-left: 50px;
+          }
+          50%{
+            margin-right: 50px;
+
+          }
+          100%{
+            margin-left: 50px;
+          }
+          
+        }
       }
     }
   }
- 
+
   .header-right {
     position: relative;
     .image img {
       position: absolute;
-      width: 400px;
-      margin-top: 30px;
+      width: 109%;
+      margin-left: 19px;
       top: 0;
     }
     .bg-img img {
@@ -92,19 +153,20 @@
       animation-duration: 3s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
-    
-    @keyframes image-anim {
-     
-      33% {
-        margin-top: 10px;
-      }
-      66% {
+
+      @keyframes image-anim {
+       0%{
+       margin-top: 10px;
+       }
+       50%{
         margin-bottom: 10px;
+        transform: translate(10%,10%);
+       }
+       100%{
+        margin-top: 10px;
+
+       }
       }
-      100% {
-        margin-bottom: -10px;
-      }
-    }
     }
   }
 }
