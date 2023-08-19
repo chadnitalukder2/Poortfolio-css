@@ -1170,18 +1170,19 @@
 
 .footer {
   background-color: var(--black-color); }
+  .footer .row {
+    border-bottom: 1px solid #515151; }
   .footer .container {
     padding: 0 100px; }
     .footer .container .footer-top {
       padding: 130px 0px;
-      border-bottom: 1px solid #515151;
       display: flex;
       justify-content: space-between;
       align-items: start;
       color: white;
       gap: 24px; }
       .footer .container .footer-top .first {
-        flex-basis: 20%; }
+        flex-basis: 25%; }
         .footer .container .footer-top .first img {
           margin-bottom: 36px;
           vertical-align: middle; }
@@ -1215,7 +1216,7 @@
       .footer .container .footer-top .third {
         flex-basis: 20%; }
       .footer .container .footer-top .four {
-        flex-basis: 20%; }
+        flex-basis: 25%; }
         .footer .container .footer-top .four h4 {
           font-size: 21px;
           font-weight: 500;
@@ -1231,18 +1232,63 @@
               margin-right: 20px; }
               .footer .container .footer-top .four .media ul li a {
                 text-decoration: none;
-                color: var(--white-color);
+                color: #fff;
                 font-size: 21px;
-                width: 42px;
-                height: 42px;
-                background-color: var(--orange-color);
-                border-radius: 6px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: all .4s;
-                border-top: 3px solid transparent;
-                border-right: 3px solid transparent; }
-              .footer .container .footer-top .four .media ul li a:hover {
-                background: var(--orange-color);
-                color: var(--white-color); }
+                background: transparent; }
+                .footer .container .footer-top .four .media ul li a .icon {
+                  width: 42px;
+                  height: 42px;
+                  background-color: var(--orange-color);
+                  border-radius: 6px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  transition: all .4s;
+                  border-top: 3px solid orangered;
+                  border-right: 3px solid orangered; }
+                  .footer .container .footer-top .four .media ul li a .icon:hover {
+                    background-color: #fff;
+                    color: var(--orange-color); }
+        .footer .container .footer-top .four .items-1 {
+          display: flex;
+          margin-bottom: 30px; }
+          .footer .container .footer-top .four .items-1 .icon {
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .footer .container .footer-top .four .items-1 .icon i {
+              color: var(--orange-color);
+              font-size: 21px; }
+          .footer .container .footer-top .four .items-1 .project p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.7em;
+            color: var(--whitw-color);
+            transition: all .4s; }
+          .footer .container .footer-top .four .items-1 .project a {
+            text-decoration: none; }
+  .footer .footer-bottom {
+    padding: 35px 0px; }
+    .footer .footer-bottom .margin-bottom {
+      padding: 0 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      color: white; }
+      .footer .footer-bottom .margin-bottom .left-bottom p {
+        font-size: 16px;
+        line-height: 1.7em;
+        color: var(--whitw-color); }
+      .footer .footer-bottom .margin-bottom .right-bottom ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 50px; }
+        .footer .footer-bottom .margin-bottom .right-bottom ul a {
+          text-decoration: none;
+          color: var(--whitw-color);
+          font-size: 16px;
+          transition: all .3s; }
+        .footer .footer-bottom .margin-bottom .right-bottom ul a:hover {
+          color: var(--orange-color); }
