@@ -1,0 +1,76 @@
+.header {
+  position: relative;
+  width: 100%;
+  background: var(--light-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px 0 140px;
+  .header-left {
+    flex-basis: 60%;
+    margin-top: 52px;
+
+    .up-banner {
+      margin-left: -110px;
+      img {
+        width: 70px;
+        position: absolute;
+        margin-top: -17px;
+        animation-name: cercal;
+        animation-duration: .3s;
+        animation-iteration-count: infinite;
+     
+       
+    }
+  }
+    .animate-heading h1 {
+      font-size: 60px;
+      line-height: -10px;
+      padding-right: 18%;
+      font-weight: 700;
+
+      margin: 0;
+      .wrapper {
+        color: var(--orange-color);
+      }
+    }
+    .info p {
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0;
+      margin-top: 20px;
+      line-height: 1.7em;
+      color: var(--secondary-black-color);
+    }
+  
+   
+    .down-banner {
+      margin-bottom: 23px;
+      text-align: center;
+      animation: floatUpDown 3s infinite ease-in-out;
+      img {
+        width: 70px;
+      
+      }
+    }
+  }
+
+  .header-right {
+    position: relative;
+    .image img {
+      position: absolute;
+      width: 109%;
+      margin-left: 19px;
+      top: 0;
+    }
+    .bg-img img {
+      margin: 40px 10px;
+      width: 350px;
+      animation-name: image-anim;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+
+    
+    }
+  }
+}

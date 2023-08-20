@@ -1,0 +1,33 @@
+@keyframes cercal {
+    0% {
+      transform: scale(1.1);
+  }
+}
+
+  @keyframes  floatUpDown  {
+    0%{
+      margin-left: 50px;
+    }
+    50%{
+      margin-right: 50px;
+
+    }
+    100%{
+      margin-left: 50px;
+    }
+    
+  }
+
+  @keyframes image-anim {
+    0%{
+    margin-top: 10px;
+    }
+    50%{
+     margin-bottom: 10px;
+     transform: translate(10%,10%);
+    }
+    100%{
+     margin-top: 10px;
+
+    }
+   }
