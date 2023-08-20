@@ -53,13 +53,13 @@
   padding: 0 50px 0 140px; }
   .header .header-left {
     flex-basis: 60%;
-    margin-top: 52px; }
+    margin-top: 100px; }
     .header .header-left .up-banner {
       margin-left: -110px; }
       .header .header-left .up-banner img {
         width: 70px;
         position: absolute;
-        margin-top: -17px;
+        margin-top: -50px;
         animation-name: cercal;
         animation-duration: .3s;
         animation-iteration-count: infinite; }
@@ -88,7 +88,8 @@
     position: relative; }
     .header .header-right .image img {
       position: absolute;
-      width: 109%;
+      width: 117%;
+      height: 100%;
       margin-left: 19px;
       top: 0; }
     .header .header-right .bg-img img {
