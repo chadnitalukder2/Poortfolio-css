@@ -6,10 +6,16 @@
   width: 100%;
   gap: 10px;
   padding: 25px 60px; }
+  @media only screen and (max-width: 1200px) {
+    .navbar {
+      padding: 0px 0px 50px 0px; } }
   .navbar__logo {
     flex-basis: 20%; }
     .navbar__logo img {
       width: 90px; }
+    @media only screen and (max-width: 1200px) {
+      .navbar__logo {
+        padding-left: 100px; } }
   .navbar__menu {
     display: flex;
     justify-content: center;
@@ -34,6 +40,9 @@
     display: flex;
     flex-basis: 20%;
     justify-content: right; }
+    @media only screen and (max-width: 1200px) {
+      .navbar__contact {
+        justify-content: start; } }
     .navbar__contact a {
       text-decoration: none; }
     .navbar__contact-bold {
@@ -51,6 +60,9 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 50px 0 140px; }
+  @media only screen and (max-width: 1200px) {
+    .header {
+      padding: 0px 0px 50px 30px; } }
   .header .header-left {
     flex-basis: 60%;
     margin-top: 100px; }
@@ -106,35 +118,47 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 1200px) {
+    .about {
+      padding: 130px 0px 50px 25px; } }
   .about .about-left {
-    flex-basis: 45%;
-    border-radius: 6px;
-    position: relative; }
-    .about .about-left img {
-      background: rgba(0, 0, 0, 0.4);
+    flex-basis: 50%;
+    border-radius: 6px; }
+    .about .about-left .photo {
+      position: relative;
       width: 100%;
-      height: 100%;
-      border-radius: 6px; }
-    .about .about-left .hidden {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 6px;
-      background: #070b1093;
-      margin: 0 auto;
-      top: 0;
-      transition: all .5s;
-      opacity: 0; }
-    .about .about-left:hover .hidden {
-      opacity: 1; }
+      margin-bottom: 50px; }
+      .about .about-left .photo .cover-img img {
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        border-radius: 6px; }
+      .about .about-left .photo .hidden {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        background: #070b1093;
+        margin: 0 auto;
+        top: 0;
+        transition: all .5s;
+        opacity: 0; }
+      .about .about-left .photo:hover .hidden {
+        opacity: 1; }
   .about .about-right {
-    flex-basis: 55%;
-    padding: 45px 50px 0px 30px; }
+    flex-basis: 50%;
+    padding: 45px 0px 0px 30px; }
+    @media only screen and (max-width: 1200px) {
+      .about .about-right {
+        padding: 0px 40px 0px 40px; } }
     .about .about-right h2 {
       font-size: 44px;
       font-weight: 700;
       color: var(--black-color);
       line-height: 1.3em; }
+      @media only screen and (max-width: 1200px) {
+        .about .about-right h2 {
+          font-size: 36px; } }
     .about .about-right .info {
       margin-top: 20px;
       font-size: 16px;
@@ -236,10 +260,13 @@
         box-sizing: border-box; }
         .service .container .row .service-grid .grid-1 {
           padding: 50px 30px;
-          border: 1px solid var(--light-color);
+          border: 1px solid #FFE2D1;
           border-radius: 6px;
-          transition: all .3s;
+          transition: all 0.3s;
           text-align: center; }
+          @media only screen and (max-width: 1200px) {
+            .service .container .row .service-grid .grid-1 {
+              padding: 50px 15px; } }
           .service .container .row .service-grid .grid-1 img {
             margin-bottom: 25px; }
           .service .container .row .service-grid .grid-1 h3 {
@@ -329,7 +356,7 @@
           display: flex;
           padding: 33px;
           border-radius: 6px;
-          background: var(--whitw-color); }
+          background: var(--white-color); }
           .resume .container .row .row-right .education .first {
             padding-right: 78px; }
             .resume .container .row .row-right .education .first h4 {
@@ -410,7 +437,7 @@
           margin-top: 1.5rem;
           padding: 33px;
           border-radius: 6px;
-          background: var(--whitw-color);
+          background: var(--white-color);
           display: flex; }
           .resume .container .row .row-right .skills .first {
             padding-right: 78px; }
@@ -673,7 +700,7 @@
                 color: var(--secondary-black-color); }
         .resume .container .row .row-right .experience {
           margin-top: 50px;
-          background: var(--whitw-color);
+          background: var(--white-color);
           padding: 33px;
           border-radius: 6px;
           display: flex; }
@@ -1218,6 +1245,15 @@
     color: var(--black-color);
     text-transform: uppercase;
     padding-left: 10px; }
+  .sub-heading h2 {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--black-color);
+    text-transform: uppercase;
+    line-height: 1.3em; }
+    @media only screen and (max-width: 1200px) {
+      .sub-heading h2 {
+        font-size: 42px; } }
 
 .heading {
   text-align: center; }
@@ -1236,3 +1272,6 @@
     color: var(--black-color);
     text-transform: uppercase;
     line-height: 1.3em; }
+    @media only screen and (max-width: 1200px) {
+      .heading h2 {
+        font-size: 42px; } }
