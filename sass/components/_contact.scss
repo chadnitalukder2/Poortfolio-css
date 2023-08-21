@@ -1,16 +1,26 @@
 .contact {
   padding: 65px 0px 130px 0px;
+  @media only screen and (max-width: 992px) {
+    padding: 45px 0px 90px 0px;
+  }
   .container {
     padding: 0 100px;
-   
+    @media only screen and (max-width: 992px){
+      padding:0px 50px;
+  }
+
     .home {
       margin-top: 50px;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      flex-wrap: wrap;
       gap: 24px;
       .home-left {
         flex-basis: 70%;
+        @media only screen and (max-width: 992px) {
+          flex-basis: 100%;
+        }
         form {
           display: flex;
           width: 100%;
@@ -46,14 +56,20 @@
       }
       .home-right {
         flex-basis: 40%;
-        .margin{
+        @media only screen and (max-width: 992px) {
+          width: 100%;
+        }
+        .margin {
           display: flex;
           flex-wrap: wrap;
           padding-left: 78px;
-          .items-1{
+          @media only screen and (max-width: 992px) {
+            padding-left: 0;
+          }
+          .items-1 {
             display: flex;
             margin-bottom: 30px;
-            .icon{
+            .icon {
               margin-right: 10px;
               width: 60px;
               height: 60px;
@@ -62,36 +78,32 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              i{
+              i {
                 color: var(--orange-color);
                 font-size: 30px;
               }
             }
-            .project{
-              h4{
+            .project {
+              h4 {
                 font-size: 21px;
                 font-weight: 500;
                 color: var(--black-color);
               }
-              p{
+              p {
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 1.7em;
                 color: var(--secondary-black-color);
-                transition: all .4s;
+                transition: all 0.4s;
               }
-              a{
+              a {
                 text-decoration: none;
-                
               }
-              p:hover{
-                  color: var(--orange-color);
-                
+              p:hover {
+                color: var(--orange-color);
               }
             }
-            
           }
-
         }
       }
     }

@@ -1,8 +1,13 @@
 .blog {
   padding: 65px 0;
+  @media only screen and (max-width: 992px) {
+    padding: 45px 0px;
+}
   .container {
     padding: 0 100px;
-
+    @media only screen and (max-width: 992px){
+      padding:0px 50px;
+  }
     .blogs-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
