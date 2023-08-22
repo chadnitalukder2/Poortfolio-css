@@ -1,14 +1,17 @@
 .portfolio {
   padding: 65px 0;
-  @media only screen and (max-width: 992px){
+  @media only screen and (max-width: 992px) {
     padding: 90px 0px;
   }
   .container {
     padding: 0 100px;
-    @media only screen and (max-width: 992px){
-      padding:0px 50px;
-  }
-   
+    @media only screen and (max-width: 992px) {
+      padding: 0px 50px;
+    }
+    @media only screen and (max-width: 576px) {
+      padding: 0px 10px;
+    }
+
     .mobile-row {
       margin-top: 50px;
 
@@ -16,9 +19,11 @@
         margin-bottom: 45px;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 20px;
-        @media only screen and (max-width: 992px){
-        gap: 8px;
+        @media only screen and (max-width: 992px) {
+          gap: 8px;
+          padding: 0 15px;
         }
         button {
           font-weight: 500;
@@ -28,10 +33,12 @@
           background: transparent;
           position: relative;
           color: var(--secondary-black-color);
-          @media only screen and (max-width: 992px){
-    font-size: 14px;
-  
-}
+          @media only screen and (max-width: 992px) {
+            font-size: 14px;
+          }
+          @media only screen and (max-width: 576px) {
+            padding: 10px;
+           }
           &:hover {
             color: var(--black-color);
             position: relative;
@@ -55,9 +62,12 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 24px;
         text-align: center;
-        @media only screen and (max-width: 992px){
+        @media only screen and (max-width: 992px) {
           grid-template-columns: 1fr 1fr;
-          }
+        }
+        @media only screen and (max-width: 576px) {
+          grid-template-columns: 1fr;
+      }
 
         .items {
           position: relative;

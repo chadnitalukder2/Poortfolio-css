@@ -8,6 +8,9 @@
     @media only screen and (max-width: 992px){
       padding:0px 50px;
   }
+  @media only screen and (max-width: 576px) {
+    padding: 0px 10px;
+  }
 
     .home {
       margin-top: 50px;
@@ -31,6 +34,9 @@
             flex-basis: 45%;
             gap: 5%;
             margin: 10px 0;
+            @media only screen and (max-width: 576px) {
+              flex-basis: 100%;
+            }
             input {
               padding: 20px;
               border: 1px solid #ffe2d1;

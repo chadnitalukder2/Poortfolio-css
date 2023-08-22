@@ -8,6 +8,9 @@
     @media only screen and (max-width: 992px){
         padding:0px 50px;
     }
+    @media only screen and (max-width: 576px) {
+      padding: 0px 10px;
+    }
     .footer-top {
       padding: 130px 0px;
       display: flex;
@@ -23,6 +26,9 @@
         flex-basis: 25%;
         @media only screen and (max-width: 992px) {
           flex-basis: 50%;
+        }
+        @media only screen and (max-width: 576px) {
+        flex-basis: 100%;
         }
         img {
           margin-bottom: 36px;
@@ -79,6 +85,9 @@
         @media only screen and (max-width: 992px) {
             flex-basis: 50%;
           }
+          @media only screen and (max-width: 576px) {
+            flex-basis: 100%;
+            }
         h4 {
           font-size: 21px;
           font-weight: 500;
@@ -152,10 +161,17 @@
     padding: 35px 0px;
     .margin-bottom {
       padding: 0 100px;
+      @media only screen and (max-width: 992px){
+        padding:0px 50px;
+    }
+    @media only screen and (max-width: 576px) {
+      padding: 0px 10px;
+    }
       display: flex;
       justify-content: space-between;
       align-items: start;
       color: white;
+      flex-wrap: wrap;
       .left-bottom {
         p {
           font-size: 16px;
@@ -169,6 +185,7 @@
           justify-content: space-between;
           list-style: none;
           gap: 50px;
+        
           a {
             text-decoration: none;
             color: var(--white-color);

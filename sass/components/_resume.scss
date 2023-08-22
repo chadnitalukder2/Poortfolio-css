@@ -7,17 +7,28 @@
   }
   .container {
     padding: 0 100px;
+   
     @media only screen and (max-width: 992px){
       padding:0px 50px;
   }
-   
-
+  @media only screen and (max-width: 576px) {
+    padding: 0px 10px;
+}
     .row {
       display: flex;
       justify-content: space-between;
       margin-top: 50px;
+       gap: 20px;
+      @media only screen and (max-width: 576px) {
+       display: block;
+       gap: 10px;
+    }
+    
       .row-left {
         flex-basis: 15%;
+        @media only screen and (max-width: 1200px) {
+          flex-basis: 15%;
+         }
         @media only screen and (max-width: 992px){
          display: none;
         }
@@ -90,14 +101,24 @@
         }
       }
       .row-right {
-        flex-basis: 87%;
+        flex-basis: 80%;
+        @media only screen and (max-width: 1200px) {
+          flex-basis: 80%;
+         }
+         @media only screen and (max-width: 992px) {
+          flex-basis: 100%;
+         }
        
         .education {
-          display: flex;
-          flex-wrap: wrap;
+          display: flex;     
           padding: 33px;
           border-radius: 6px;
           background: var(--white-color);
+          flex-basis: 15%;
+          @media only screen and (max-width: 992px){
+          flex-wrap: wrap;
+          flex-basis: 100%;
+          }
          
           .first {
             padding-right: 78px;
@@ -218,7 +239,10 @@
           border-radius: 6px;
           background: var(--white-color);
           display: flex;
-          flex-wrap: wrap;
+          @media only screen and (max-width: 992px){
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            }
 
           .first {
             padding-right: 78px;
@@ -237,6 +261,7 @@
               display: flex;
               justify-content: space-between;
               margin-top: 10px;
+             
               .type {
                 font-size: 16px;
                 font-weight: 400;
@@ -253,7 +278,9 @@
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%);
-                  
+                  @media only screen and (max-width: 992px){
+                    width: 400px;
+                  }
                 }
               }
               .number {
@@ -569,7 +596,10 @@
             padding: 33px;
             border-radius: 6px;
             display: flex;
-            flex-wrap: wrap;
+            @media only screen and (max-width: 992px){
+              flex-wrap: wrap;
+              flex-basis: 100%;
+              }
 
             .first {
                 padding-right: 78px;

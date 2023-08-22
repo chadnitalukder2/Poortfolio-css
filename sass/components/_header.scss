@@ -8,6 +8,9 @@
   @media only screen and (max-width: 1200px) {
     padding: 0px 0px 50px 30px;
   }
+  @media only screen and (max-width: 576px) {
+  padding: 0px 10px;
+  }
 
   .header-left {
     flex-basis: 50%;
@@ -16,6 +19,9 @@
       flex-basis: 100%;
       order: 2;
     }
+    @media only screen and (max-width: 576px) {
+      margin-top: 30px;
+     }
 
     .up-banner {
       margin-left: -110px;
@@ -26,16 +32,22 @@
         animation-duration: 0.3s;
         animation-iteration-count: infinite;
         position: absolute;
-        @media only screen and (max-width: 992px) {
-         top: 60px;
-         left: 50px;
-         width: 80px;
-        }
+       
         @media only screen and (max-width: 1200px) {
           top: 60px;
           left: 27px;
           width: 75px;
         }
+        @media only screen and (max-width: 992px) {
+          top: 60px;
+          left: 50px;
+          width: 80px;
+         }
+         @media only screen and (max-width: 576px) {
+          top: 65px;
+          left: 17px;
+          width: 50px;
+         }
       }
     }
     .animate-heading h1 {
@@ -65,8 +77,11 @@
       margin-bottom: 23px;
       text-align: center;
       animation: floatUpDown 3s infinite ease-in-out;
+    
+       
       img {
         width: 70px;
+       
       }
     }
   }
@@ -90,6 +105,10 @@
         padding: 0px 90px 0px 150px;
         position: relative;
       }
+      @media only screen and (max-width: 576px) {
+        padding: 0px 0px 0px 0px;
+        width: 95%;
+      }
     }
     .bg-img img {
       margin: 40px 38px;
@@ -103,6 +122,9 @@
        position:absolute;
        padding: 37px 0px 0px 150px;
        width: 60%;
+}
+@media only screen and (max-width: 576px) {
+  padding: 0px 0px 0px 0px;
 }
     }
   }
