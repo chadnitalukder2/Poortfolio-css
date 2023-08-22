@@ -1218,13 +1218,16 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      flex-wrap: wrap;
       gap: 24px; }
+      @media only screen and (max-width: 800px) {
+        .contact .container .home {
+          flex-wrap: wrap; } }
       .contact .container .home .home-left {
         flex-basis: 70%; }
         @media only screen and (max-width: 992px) {
           .contact .container .home .home-left {
-            flex-basis: 100%; } }
+            flex-basis: 100%;
+            flex-wrap: wrap; } }
         .contact .container .home .home-left form {
           display: flex;
           width: 100%;
