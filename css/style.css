@@ -111,7 +111,7 @@
       margin: 0; }
       @media only screen and (max-width: 1200px) {
         .header .header-left .animate-heading h1 {
-          font-size: 50px;
+          font-size: 46px;
           padding-right: 10%; } }
       @media only screen and (max-width: 576px) {
         .header .header-left .animate-heading h1 {
@@ -499,7 +499,7 @@
         flex-basis: 80%; }
         @media only screen and (max-width: 1200px) {
           .resume .container .row .row-right {
-            flex-basis: 80%; } }
+            flex-basis: 100%; } }
         @media only screen and (max-width: 992px) {
           .resume .container .row .row-right {
             flex-basis: 100%; } }
@@ -613,17 +613,21 @@
           padding: 33px;
           border-radius: 6px;
           background: var(--white-color);
-          display: flex; }
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between; }
           @media only screen and (max-width: 992px) {
             .resume .container .row .row-right .skills {
               flex-wrap: wrap; } }
           .resume .container .row .row-right .skills .first {
-            padding-right: 78px; }
+            padding-right: 78px;
+            flex-basis: 33.33%; }
             @media only screen and (max-width: 992px) {
               .resume .container .row .row-right .skills .first {
                 padding-right: 0px;
                 padding-left: 0px;
-                margin-bottom: 30px; } }
+                margin-bottom: 30px;
+                flex-basis: 100%; } }
             .resume .container .row .row-right .skills .first h4 {
               font-size: 21px;
               font-weight: 600;
@@ -642,7 +646,7 @@
                 .resume .container .row .row-right .skills .first .row-1 .type::after {
                   content: "";
                   position: absolute;
-                  width: 188%;
+                  width: 110px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
@@ -650,7 +654,7 @@
                   transform: translateY(-50%); }
                   @media only screen and (max-width: 992px) {
                     .resume .container .row .row-right .skills .first .row-1 .type::after {
-                      width: 400px; } }
+                      width: 100px; } }
               .resume .container .row .row-right .skills .first .row-1 .number {
                 font-size: 16px;
                 font-weight: 400;
@@ -670,12 +674,15 @@
                 .resume .container .row .row-right .skills .first .row-2 .type::after {
                   content: "";
                   position: absolute;
-                  width: 77%;
+                  width: 85px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%); }
+                  @media only screen and (max-width: 992px) {
+                    .resume .container .row .row-right .skills .first .row-2 .type::after {
+                      width: 100px; } }
               .resume .container .row .row-right .skills .first .row-2 .number {
                 font-size: 16px;
                 font-weight: 400;
@@ -694,35 +701,40 @@
                 .resume .container .row .row-right .skills .first .row-3 .type::after {
                   content: "";
                   position: absolute;
-                  width: 67%;
+                  width: 80px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%); }
+                  @media only screen and (max-width: 992px) {
+                    .resume .container .row .row-right .skills .first .row-3 .type::after {
+                      width: 100px; } }
               .resume .container .row .row-right .skills .first .row-3 .number {
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 1.7em;
                 color: var(--secondary-black-color); }
           .resume .container .row .row-right .skills .second {
-            padding-right: 70px;
-            padding-left: 90px;
-            position: relative; }
+            padding-right: 40px;
+            padding-left: 35px;
+            position: relative;
+            flex-basis: 33.33%; }
             @media only screen and (max-width: 992px) {
               .resume .container .row .row-right .skills .second {
                 padding-right: 0px;
-                padding-left: 20px;
-                margin-bottom: 30px; } }
+                padding-left: 0px;
+                margin-bottom: 30px;
+                flex-basis: 100%; } }
             .resume .container .row .row-right .skills .second::before {
               content: "";
               position: absolute;
-              left: 23px;
+              left: -17px;
               top: 50%;
               transform: translateY(-50%);
               display: inline-block;
               width: 1px;
-              height: 90%;
+              height: 100%;
               background-color: #d1d1d1; }
               @media only screen and (max-width: 992px) {
                 .resume .container .row .row-right .skills .second::before {
@@ -745,12 +757,15 @@
                 .resume .container .row .row-right .skills .second .row-1 .type::after {
                   content: "";
                   position: absolute;
-                  width: 85%;
+                  width: 85px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%); }
+                  @media only screen and (max-width: 992px) {
+                    .resume .container .row .row-right .skills .second .row-1 .type::after {
+                      width: 100px; } }
               .resume .container .row .row-right .skills .second .row-1 .number {
                 font-size: 16px;
                 font-weight: 400;
@@ -769,12 +784,15 @@
                 .resume .container .row .row-right .skills .second .row-2 .type::after {
                   content: "";
                   position: absolute;
-                  width: 117%;
+                  width: 95px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%); }
+                  @media only screen and (max-width: 992px) {
+                    .resume .container .row .row-right .skills .second .row-2 .type::after {
+                      width: 100px; } }
               .resume .container .row .row-right .skills .second .row-2 .number {
                 font-size: 16px;
                 font-weight: 400;
@@ -793,12 +811,15 @@
                 .resume .container .row .row-right .skills .second .row-3 .type::after {
                   content: "";
                   position: absolute;
-                  width: 180%;
+                  width: 108px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%); }
+                  @media only screen and (max-width: 992px) {
+                    .resume .container .row .row-right .skills .second .row-3 .type::after {
+                      width: 100px; } }
               .resume .container .row .row-right .skills .second .row-3 .number {
                 font-size: 16px;
                 font-weight: 400;
@@ -812,17 +833,19 @@
               transform: translateY(-50%);
               display: inline-block;
               width: 1px;
-              height: 90%;
+              height: 100%;
               background-color: #d1d1d1; }
               @media only screen and (max-width: 992px) {
                 .resume .container .row .row-right .skills .second::after {
                   display: none; } }
           .resume .container .row .row-right .skills .third {
             padding-left: 78px;
-            padding-left: 78px; }
+            flex-basis: 33.33%;
+            padding-left: 55px; }
             @media only screen and (max-width: 992px) {
               .resume .container .row .row-right .skills .third {
-                padding-left: 0px; } }
+                padding-left: 0px;
+                flex-basis: 100%; } }
             .resume .container .row .row-right .skills .third h4 {
               font-size: 21px;
               font-weight: 600;
@@ -841,7 +864,7 @@
                 .resume .container .row .row-right .skills .third .row-1 .type::after {
                   content: "";
                   position: absolute;
-                  width: 132px;
+                  width: 135px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
@@ -849,7 +872,7 @@
                   transform: translateY(-50%); }
                   @media only screen and (max-width: 992px) {
                     .resume .container .row .row-right .skills .third .row-1 .type::after {
-                      width: 400px; } }
+                      width: 100px; } }
               .resume .container .row .row-right .skills .third .row-1 .number {
                 font-size: 16px;
                 font-weight: 400;
@@ -868,12 +891,15 @@
                 .resume .container .row .row-right .skills .third .row-2 .type::after {
                   content: "";
                   position: absolute;
-                  width: 113px;
+                  width: 115px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%); }
+                  @media only screen and (max-width: 992px) {
+                    .resume .container .row .row-right .skills .third .row-2 .type::after {
+                      width: 100px; } }
               .resume .container .row .row-right .skills .third .row-2 .number {
                 font-size: 16px;
                 font-weight: 400;
@@ -892,12 +918,15 @@
                 .resume .container .row .row-right .skills .third .row-3 .type::after {
                   content: "";
                   position: absolute;
-                  width: 95px;
+                  width: 98px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%); }
+                  @media only screen and (max-width: 992px) {
+                    .resume .container .row .row-right .skills .third .row-3 .type::after {
+                      width: 100px; } }
               .resume .container .row .row-right .skills .third .row-3 .number {
                 font-size: 16px;
                 font-weight: 400;

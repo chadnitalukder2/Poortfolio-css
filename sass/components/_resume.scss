@@ -103,7 +103,7 @@
       .row-right {
         flex-basis: 80%;
         @media only screen and (max-width: 1200px) {
-          flex-basis: 80%;
+          flex-basis: 100%;
          }
          @media only screen and (max-width: 992px) {
           flex-basis: 100%;
@@ -239,17 +239,21 @@
           border-radius: 6px;
           background: var(--white-color);
           display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
           @media only screen and (max-width: 992px){
             flex-wrap: wrap;
-          
             }
 
           .first {
             padding-right: 78px;
+            flex-basis: 33.33%;
+           
             @media only screen and (max-width: 992px){
               padding-right: 0px;
               padding-left: 0px;
               margin-bottom: 30px;
+              flex-basis: 100%;
               
             }
             h4 {
@@ -274,14 +278,14 @@
                 &::after {
                   content: "";
                   position: absolute;
-                  width: 188%;
+                  width: 110px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%);
                   @media only screen and (max-width: 992px){
-                    width: 400px;
+                    width: 100px;
                   }
                 }
               }
@@ -307,13 +311,15 @@
                 &::after {
                   content: "";
                   position: absolute;
-                  width: 77%;
+                  width: 85px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%);
-                 
+                  @media only screen and (max-width: 992px) {
+                width: 100px;
+                }
                  
                 }
               }
@@ -338,13 +344,15 @@
                 &::after {
                   content: "";
                   position: absolute;
-                  width: 67%;
+                  width: 80px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%);
-                   
+                  @media only screen and (max-width: 992px) {
+                    width: 100px;
+                    }
                 }
               }
               .number {
@@ -356,23 +364,25 @@
             }
           }
           .second {
-            padding-right: 70px;
-            padding-left: 90px;
+            padding-right: 40px;
+            padding-left: 35px;
             position: relative;
+            flex-basis: 33.33%;
             @media only screen and (max-width: 992px){
               padding-right: 0px;
-              padding-left: 20px;
+              padding-left: 0px;
               margin-bottom: 30px;
+              flex-basis: 100%;
             }
             &::before {
               content: "";
               position: absolute;
-              left: 23px;
+              left: -17px;
               top: 50%;
               transform: translateY(-50%);
               display: inline-block;
               width: 1px;
-              height: 90%;
+              height: 100%;
               background-color: #d1d1d1;
               @media only screen and (max-width: 992px){
                 display: none;
@@ -398,13 +408,15 @@
                 &::after {
                   content: "";
                   position: absolute;
-                  width: 85%;
+                  width: 85px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%);
-                 
+                  @media only screen and (max-width: 992px) {
+                    width: 100px;
+                    }
                 }
               }
               .number {
@@ -428,12 +440,15 @@
                 &::after {
                   content: "";
                   position: absolute;
-                  width: 117%;
+                  width: 95px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%);
+                  @media only screen and (max-width: 992px) {
+                    width: 100px;
+                    }
                 }
               }
               .number {
@@ -457,12 +472,15 @@
                 &::after {
                   content: "";
                   position: absolute;
-                  width: 180%;
+                  width: 108px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%);
+                  @media only screen and (max-width: 992px) {
+                    width: 100px;
+                    }
                 }
               }
               .number {
@@ -481,7 +499,7 @@
               transform: translateY(-50%);
               display: inline-block;
               width: 1px;
-              height: 90%;
+              height: 100%;
               background-color: #d1d1d1;
               @media only screen and (max-width: 992px){
                 display: none;
@@ -490,9 +508,11 @@
           }
           .third {
             padding-left: 78px;
-            padding-left: 78px;
+            flex-basis: 33.33%;
+            padding-left: 55px;
             @media only screen and (max-width: 992px){
               padding-left: 0px;
+              flex-basis: 100%;
             }
 
             h4 {
@@ -515,14 +535,14 @@
                 &::after {
                   content: "";
                   position: absolute;
-                  width: 132px;
+                  width: 135px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%);
                   @media only screen and (max-width: 992px){
-                    width: 400px;
+                    width: 100px;
                   }
                 }
               }
@@ -547,12 +567,15 @@
                 &::after {
                   content: "";
                   position: absolute;
-                  width: 113px;
+                  width: 115px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%);
+                  @media only screen and (max-width: 992px) {
+                    width: 100px;
+                    }
                 }
               }
               .number {
@@ -576,12 +599,15 @@
                 &::after {
                   content: "";
                   position: absolute;
-                  width: 95px;
+                  width: 98px;
                   height: 1px;
                   background-color: #d9d9d9;
                   margin-left: 10px;
                   top: 50%;
                   transform: translateY(-50%);
+                  @media only screen and (max-width: 992px) {
+                    width: 100px;
+                    }
                 }
               }
               .number {
