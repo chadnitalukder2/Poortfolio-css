@@ -1,4 +1,12 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
 
+@import"./base/animations";
+@import"./base/base";
+@import"./base/btn";
+@import"./base/heading";
+
+@import "./components/mobile-nav.scss";
 @import "./components/navbar";
 @import "./components/header";
 @import "./components/about";
@@ -9,13 +17,9 @@
 @import "./components/contact";
 @import "./components/footer";
 
-@import"./base/animations";
-@import"./base/base";
-@import"./base/btn";
-@import"./base/heading";
 
-@import "./abstracts/mixins";
-@import "./abstracts/variables";
+
+
 
 
 
