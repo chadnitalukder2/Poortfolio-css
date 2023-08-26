@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: "Jost", sans-serif;
   }
+  html{
+  scroll-behavior: smooth;
+  }
+
 
   :root {
     --orange-color: #ff6b00;

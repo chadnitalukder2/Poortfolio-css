@@ -1,7 +1,9 @@
-.mobile-nav{
-   
-    background:red;
+.mobile-nav{   
+    background:var( --light-color);
     width: 100%;
+    @media only screen and (min-width: 780px) {
+      display: none;
+    }
     .degain{
      display: flex;
      justify-content: space-between;
@@ -21,11 +23,17 @@
                 color: black;
                 padding: 10px;
             }
+
         }
+     }
+     #mobileMenuIconClose{
+      display: none;
      }
     }
     .nav-menu{
         background:#0c1923;
+        height: 0;
+        transition: all .5s;
         ul{
             list-style: none;
         

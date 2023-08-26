@@ -48,7 +48,7 @@
               border-radius: 6px;
               line-height: 1.7em;
               width: 100%;
-              font-size: 12px;
+              font-size: 16px;
               font-weight: 400;
 
               &:focus-visible {
@@ -119,4 +119,8 @@
       }
     }
   }
+  textarea {
+    min-height: calc(1.5em + 0.75rem + calc(var(--bs-border-width) * 2));
+    height: 87px;
+}
 }
