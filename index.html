@@ -12,14 +12,16 @@
 
        <!-- mobile-nav start-->
        <div class="mobile-nav">
-        <div class="degain">
-          <img src="./img/Logo.png">
-          <div class="icon">
+           <div class="icon" id="mobileMenuIcon">
             <a href="#">
               <i class="fa-solid fa-bars"></i>
             </a>
             </div>
-        </div>
+            <div class="icon" id="mobileMenuIconClose">
+              <a href="#">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+            </div>
         <div class="nav-menu">
           <ul>
             <li><a href="#"> HOME </a></li>
@@ -755,5 +757,17 @@
       </div>
       <!-- footer end -->
       </div>
+            <script>
+        document.querySelector("#mobileMenuIcon").addEventListener("click", function(){
+          document.querySelector(".nav-menu").style.height = "420px";
+          document.querySelector("#mobileMenuIcon").style.display = "none";
+          document.querySelector("#mobileMenuIconClose").style.display = "block";
+        });
+        document.querySelector("#mobileMenuIconClose").addEventListener("click", function(){
+          document.querySelector(".nav-menu").style.height = "0px";
+          document.querySelector("#mobileMenuIcon").style.display = "block";
+          document.querySelector("#mobileMenuIconClose").style.display = "none";
+        });
+        </script>
   </body>
 </html>
