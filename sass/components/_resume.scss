@@ -2,6 +2,10 @@
   background: var(--light-color);
   padding: 130px 0;
   width: 100%;
+
+  @media only screen and (min-width: 1500px){
+    padding:100px 250px ;
+  }
   @media only screen and (max-width: 992px){
     padding: 90px 0px;
   }
